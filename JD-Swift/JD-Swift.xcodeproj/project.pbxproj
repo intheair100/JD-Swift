@@ -12,6 +12,11 @@
 		F82172C11EC175FF004FED07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F82172BF1EC175FF004FED07 /* LaunchScreen.storyboard */; };
 		F82172CC1EC175FF004FED07 /* JD_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82172CB1EC175FF004FED07 /* JD_SwiftTests.swift */; };
 		F82172D71EC175FF004FED07 /* JD_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82172D61EC175FF004FED07 /* JD_SwiftUITests.swift */; };
+		F82173321EC17CAC004FED07 /* JDTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82173311EC17CAC004FED07 /* JDTabBarController.swift */; };
+		F82173341EC17CFB004FED07 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82173331EC17CFB004FED07 /* HomeViewController.swift */; };
+		F82173361EC17D0A004FED07 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82173351EC17D0A004FED07 /* CategoryViewController.swift */; };
+		F82173381EC17D1D004FED07 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82173371EC17D1D004FED07 /* CartViewController.swift */; };
+		F821733A1EC17D2C004FED07 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82173391EC17D2C004FED07 /* MyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +48,11 @@
 		F82172D21EC175FF004FED07 /* JD-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JD-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F82172D61EC175FF004FED07 /* JD_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JD_SwiftUITests.swift; sourceTree = "<group>"; };
 		F82172D81EC175FF004FED07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F82173311EC17CAC004FED07 /* JDTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JDTabBarController.swift; sourceTree = "<group>"; };
+		F82173331EC17CFB004FED07 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F82173351EC17D0A004FED07 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		F82173371EC17D1D004FED07 /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		F82173391EC17D2C004FED07 /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +103,7 @@
 		F82172BA1EC175FF004FED07 /* JD-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				F82172E91EC17C55004FED07 /* Classes */,
 				F82172BB1EC175FF004FED07 /* AppDelegate.swift */,
 				F82172BD1EC175FF004FED07 /* Assets.xcassets */,
 				F82172BF1EC175FF004FED07 /* LaunchScreen.storyboard */,
@@ -117,6 +128,562 @@
 				F82172D81EC175FF004FED07 /* Info.plist */,
 			);
 			path = "JD-SwiftUITests";
+			sourceTree = "<group>";
+		};
+		F82172E91EC17C55004FED07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F821732E1EC17C98004FED07 /* Main(主要) */,
+				F82172EA1EC17C55004FED07 /* Category(分类) */,
+				F82172EE1EC17C55004FED07 /* Category(扩展) */,
+				F82173011EC17C55004FED07 /* DataBase(数据) */,
+				F82173031EC17C55004FED07 /* Details(商品) */,
+				F82173071EC17C55004FED07 /* Found(发现) */,
+				F82173091EC17C55004FED07 /* GuideView(引导页) */,
+				F821730B1EC17C55004FED07 /* Home(首页) */,
+				F821730F1EC17C55004FED07 /* Me(我的) */,
+				F821731C1EC17C55004FED07 /* Resource(资源) */,
+				F82173201EC17C56004FED07 /* Shopping(购物车) */,
+				F82173241EC17C56004FED07 /* Untils(自定义) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F82172EA1EC17C55004FED07 /* Category(分类) */ = {
+			isa = PBXGroup;
+			children = (
+				F82172EB1EC17C55004FED07 /* Controller */,
+				F82172EC1EC17C55004FED07 /* Model */,
+				F82172ED1EC17C55004FED07 /* View */,
+			);
+			path = "Category(分类)";
+			sourceTree = "<group>";
+		};
+		F82172EB1EC17C55004FED07 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F82173351EC17D0A004FED07 /* CategoryViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F82172EC1EC17C55004FED07 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F82172ED1EC17C55004FED07 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F82172EE1EC17C55004FED07 /* Category(扩展) */ = {
+			isa = PBXGroup;
+			children = (
+				F82172EF1EC17C55004FED07 /* CoreCategory */,
+			);
+			path = "Category(扩展)";
+			sourceTree = "<group>";
+		};
+		F82172EF1EC17C55004FED07 /* CoreCategory */ = {
+			isa = PBXGroup;
+			children = (
+				F82172F01EC17C55004FED07 /* CALayer */,
+				F82172F11EC17C55004FED07 /* CoreExtend */,
+				F82172F31EC17C55004FED07 /* CorePageControl */,
+				F82172F51EC17C55004FED07 /* NSArray */,
+				F82172F61EC17C55004FED07 /* NSDate */,
+				F82172F71EC17C55004FED07 /* NSObject */,
+				F82172F81EC17C55004FED07 /* NSString */,
+				F82172F91EC17C55004FED07 /* UIButton */,
+				F82172FA1EC17C55004FED07 /* UIColor */,
+				F82172FB1EC17C55004FED07 /* UIFont */,
+				F82172FC1EC17C55004FED07 /* UIImage */,
+				F82172FE1EC17C55004FED07 /* UITableViewCell */,
+				F82172FF1EC17C55004FED07 /* UIView */,
+				F82173001EC17C55004FED07 /* UIWindow */,
+			);
+			path = CoreCategory;
+			sourceTree = "<group>";
+		};
+		F82172F01EC17C55004FED07 /* CALayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CALayer;
+			sourceTree = "<group>";
+		};
+		F82172F11EC17C55004FED07 /* CoreExtend */ = {
+			isa = PBXGroup;
+			children = (
+				F82172F21EC17C55004FED07 /* CodeSnippets */,
+			);
+			path = CoreExtend;
+			sourceTree = "<group>";
+		};
+		F82172F21EC17C55004FED07 /* CodeSnippets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CodeSnippets;
+			sourceTree = "<group>";
+		};
+		F82172F31EC17C55004FED07 /* CorePageControl */ = {
+			isa = PBXGroup;
+			children = (
+				F82172F41EC17C55004FED07 /* Lib */,
+			);
+			path = CorePageControl;
+			sourceTree = "<group>";
+		};
+		F82172F41EC17C55004FED07 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		F82172F51EC17C55004FED07 /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
+		F82172F61EC17C55004FED07 /* NSDate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSDate;
+			sourceTree = "<group>";
+		};
+		F82172F71EC17C55004FED07 /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
+		F82172F81EC17C55004FED07 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		F82172F91EC17C55004FED07 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		F82172FA1EC17C55004FED07 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		F82172FB1EC17C55004FED07 /* UIFont */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIFont;
+			sourceTree = "<group>";
+		};
+		F82172FC1EC17C55004FED07 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				F82172FD1EC17C55004FED07 /* UIImage+TintColor */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		F82172FD1EC17C55004FED07 /* UIImage+TintColor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "UIImage+TintColor";
+			sourceTree = "<group>";
+		};
+		F82172FE1EC17C55004FED07 /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UITableViewCell;
+			sourceTree = "<group>";
+		};
+		F82172FF1EC17C55004FED07 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		F82173001EC17C55004FED07 /* UIWindow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIWindow;
+			sourceTree = "<group>";
+		};
+		F82173011EC17C55004FED07 /* DataBase(数据) */ = {
+			isa = PBXGroup;
+			children = (
+				F82173021EC17C55004FED07 /* Base */,
+			);
+			path = "DataBase(数据)";
+			sourceTree = "<group>";
+		};
+		F82173021EC17C55004FED07 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F82173031EC17C55004FED07 /* Details(商品) */ = {
+			isa = PBXGroup;
+			children = (
+				F82173041EC17C55004FED07 /* Controller */,
+				F82173051EC17C55004FED07 /* Model */,
+				F82173061EC17C55004FED07 /* View */,
+			);
+			path = "Details(商品)";
+			sourceTree = "<group>";
+		};
+		F82173041EC17C55004FED07 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F82173051EC17C55004FED07 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F82173061EC17C55004FED07 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F82173071EC17C55004FED07 /* Found(发现) */ = {
+			isa = PBXGroup;
+			children = (
+				F82173081EC17C55004FED07 /* Controller */,
+			);
+			path = "Found(发现)";
+			sourceTree = "<group>";
+		};
+		F82173081EC17C55004FED07 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F82173091EC17C55004FED07 /* GuideView(引导页) */ = {
+			isa = PBXGroup;
+			children = (
+				F821730A1EC17C55004FED07 /* Controller */,
+			);
+			path = "GuideView(引导页)";
+			sourceTree = "<group>";
+		};
+		F821730A1EC17C55004FED07 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F821730B1EC17C55004FED07 /* Home(首页) */ = {
+			isa = PBXGroup;
+			children = (
+				F821730C1EC17C55004FED07 /* Controller */,
+				F821730D1EC17C55004FED07 /* Model */,
+				F821730E1EC17C55004FED07 /* View */,
+			);
+			path = "Home(首页)";
+			sourceTree = "<group>";
+		};
+		F821730C1EC17C55004FED07 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F82173331EC17CFB004FED07 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F821730D1EC17C55004FED07 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F821730E1EC17C55004FED07 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F821730F1EC17C55004FED07 /* Me(我的) */ = {
+			isa = PBXGroup;
+			children = (
+				F82173101EC17C55004FED07 /* Controller */,
+				F82173171EC17C55004FED07 /* Model */,
+				F82173181EC17C55004FED07 /* View */,
+			);
+			path = "Me(我的)";
+			sourceTree = "<group>";
+		};
+		F82173101EC17C55004FED07 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F82173111EC17C55004FED07 /* About(关于) */,
+				F82173131EC17C55004FED07 /* MyAccount(我的账户) */,
+				F82173151EC17C55004FED07 /* MyOrder(我的订单) */,
+				F82173161EC17C55004FED07 /* Setting(设置) */,
+				F82173391EC17D2C004FED07 /* MyViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F82173111EC17C55004FED07 /* About(关于) */ = {
+			isa = PBXGroup;
+			children = (
+				F82173121EC17C55004FED07 /* View */,
+			);
+			path = "About(关于)";
+			sourceTree = "<group>";
+		};
+		F82173121EC17C55004FED07 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F82173131EC17C55004FED07 /* MyAccount(我的账户) */ = {
+			isa = PBXGroup;
+			children = (
+				F82173141EC17C55004FED07 /* View */,
+			);
+			path = "MyAccount(我的账户)";
+			sourceTree = "<group>";
+		};
+		F82173141EC17C55004FED07 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F82173151EC17C55004FED07 /* MyOrder(我的订单) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "MyOrder(我的订单)";
+			sourceTree = "<group>";
+		};
+		F82173161EC17C55004FED07 /* Setting(设置) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Setting(设置)";
+			sourceTree = "<group>";
+		};
+		F82173171EC17C55004FED07 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F82173181EC17C55004FED07 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F821731C1EC17C55004FED07 /* Resource(资源) */ = {
+			isa = PBXGroup;
+			children = (
+				F821731D1EC17C56004FED07 /* GuideImages */,
+				F821731F1EC17C56004FED07 /* Plist */,
+			);
+			path = "Resource(资源)";
+			sourceTree = "<group>";
+		};
+		F821731D1EC17C56004FED07 /* GuideImages */ = {
+			isa = PBXGroup;
+			children = (
+				F821731E1EC17C56004FED07 /* gif */,
+			);
+			path = GuideImages;
+			sourceTree = "<group>";
+		};
+		F821731E1EC17C56004FED07 /* gif */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = gif;
+			sourceTree = "<group>";
+		};
+		F821731F1EC17C56004FED07 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		F82173201EC17C56004FED07 /* Shopping(购物车) */ = {
+			isa = PBXGroup;
+			children = (
+				F82173211EC17C56004FED07 /* Controller */,
+				F82173221EC17C56004FED07 /* Model */,
+				F82173231EC17C56004FED07 /* View */,
+			);
+			path = "Shopping(购物车)";
+			sourceTree = "<group>";
+		};
+		F82173211EC17C56004FED07 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F82173371EC17D1D004FED07 /* CartViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F82173221EC17C56004FED07 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F82173231EC17C56004FED07 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F82173241EC17C56004FED07 /* Untils(自定义) */ = {
+			isa = PBXGroup;
+			children = (
+				F82173251EC17C56004FED07 /* PPiFlatSegmentedControl */,
+				F82173291EC17C56004FED07 /* RefeshView */,
+				F821732A1EC17C56004FED07 /* REFrostedViewController */,
+				F821732B1EC17C56004FED07 /* SDCycleScrollView */,
+				F821732D1EC17C56004FED07 /* TYAttributedLabel */,
+			);
+			path = "Untils(自定义)";
+			sourceTree = "<group>";
+		};
+		F82173251EC17C56004FED07 /* PPiFlatSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				F82173261EC17C56004FED07 /* PPiAwesomeButton */,
+			);
+			path = PPiFlatSegmentedControl;
+			sourceTree = "<group>";
+		};
+		F82173261EC17C56004FED07 /* PPiAwesomeButton */ = {
+			isa = PBXGroup;
+			children = (
+				F82173271EC17C56004FED07 /* FontAwesome */,
+			);
+			path = PPiAwesomeButton;
+			sourceTree = "<group>";
+		};
+		F82173271EC17C56004FED07 /* FontAwesome */ = {
+			isa = PBXGroup;
+			children = (
+				F82173281EC17C56004FED07 /* Resources */,
+			);
+			path = FontAwesome;
+			sourceTree = "<group>";
+		};
+		F82173281EC17C56004FED07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F82173291EC17C56004FED07 /* RefeshView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RefeshView;
+			sourceTree = "<group>";
+		};
+		F821732A1EC17C56004FED07 /* REFrostedViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = REFrostedViewController;
+			sourceTree = "<group>";
+		};
+		F821732B1EC17C56004FED07 /* SDCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				F821732C1EC17C56004FED07 /* PageControl */,
+			);
+			path = SDCycleScrollView;
+			sourceTree = "<group>";
+		};
+		F821732C1EC17C56004FED07 /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PageControl;
+			sourceTree = "<group>";
+		};
+		F821732D1EC17C56004FED07 /* TYAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TYAttributedLabel;
+			sourceTree = "<group>";
+		};
+		F821732E1EC17C98004FED07 /* Main(主要) */ = {
+			isa = PBXGroup;
+			children = (
+				F821732F1EC17C98004FED07 /* Controller */,
+				F82173301EC17C98004FED07 /* View */,
+			);
+			path = "Main(主要)";
+			sourceTree = "<group>";
+		};
+		F821732F1EC17C98004FED07 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F82173311EC17CAC004FED07 /* JDTabBarController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F82173301EC17C98004FED07 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,7 +819,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F82173361EC17D0A004FED07 /* CategoryViewController.swift in Sources */,
 				F82172BC1EC175FF004FED07 /* AppDelegate.swift in Sources */,
+				F82173381EC17D1D004FED07 /* CartViewController.swift in Sources */,
+				F82173321EC17CAC004FED07 /* JDTabBarController.swift in Sources */,
+				F821733A1EC17D2C004FED07 /* MyViewController.swift in Sources */,
+				F82173341EC17CFB004FED07 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
