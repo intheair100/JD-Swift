@@ -14,6 +14,7 @@ class JDNavigationController: UINavigationController {
         
     }
    
+
     class func setupNavigationBarTheme(){
         let appearance:UINavigationBar = UINavigationBar.appearance()
         let textAttrs:NSMutableDictionary = NSMutableDictionary.init()
