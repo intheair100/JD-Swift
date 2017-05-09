@@ -7,3 +7,9 @@
 //
 
 import Foundation
+import UIKit
+class CategoryViewController: BaseViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+}

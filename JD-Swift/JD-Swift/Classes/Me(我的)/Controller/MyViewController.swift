@@ -7,3 +7,9 @@
 //
 
 import Foundation
+import UIKit
+class MyViewController: BaseViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+}

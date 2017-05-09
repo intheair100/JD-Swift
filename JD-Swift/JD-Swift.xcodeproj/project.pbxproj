@@ -17,6 +17,9 @@
 		F82173361EC17D0A004FED07 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82173351EC17D0A004FED07 /* CategoryViewController.swift */; };
 		F82173381EC17D1D004FED07 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82173371EC17D1D004FED07 /* CartViewController.swift */; };
 		F821733A1EC17D2C004FED07 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82173391EC17D2C004FED07 /* MyViewController.swift */; };
+		F821733C1EC17D92004FED07 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F821733B1EC17D92004FED07 /* BaseViewController.swift */; };
+		F821733F1EC1AAD8004FED07 /* MacroDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F821733E1EC1AAD8004FED07 /* MacroDefine.swift */; };
+		F8E570F51EC1F19E00F5E6F8 /* JDNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E570F41EC1F19E00F5E6F8 /* JDNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		F82173351EC17D0A004FED07 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		F82173371EC17D1D004FED07 /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		F82173391EC17D2C004FED07 /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		F821733B1EC17D92004FED07 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F821733E1EC1AAD8004FED07 /* MacroDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacroDefine.swift; sourceTree = "<group>"; };
+		F8E570F41EC1F19E00F5E6F8 /* JDNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JDNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -525,6 +531,7 @@
 			children = (
 				F821731D1EC17C56004FED07 /* GuideImages */,
 				F821731F1EC17C56004FED07 /* Plist */,
+				F821733E1EC1AAD8004FED07 /* MacroDefine.swift */,
 			);
 			path = "Resource(资源)";
 			sourceTree = "<group>";
@@ -675,6 +682,8 @@
 			isa = PBXGroup;
 			children = (
 				F82173311EC17CAC004FED07 /* JDTabBarController.swift */,
+				F8E570F41EC1F19E00F5E6F8 /* JDNavigationController.swift */,
+				F821733B1EC17D92004FED07 /* BaseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -820,10 +829,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F82173361EC17D0A004FED07 /* CategoryViewController.swift in Sources */,
+				F821733F1EC1AAD8004FED07 /* MacroDefine.swift in Sources */,
 				F82172BC1EC175FF004FED07 /* AppDelegate.swift in Sources */,
 				F82173381EC17D1D004FED07 /* CartViewController.swift in Sources */,
+				F8E570F51EC1F19E00F5E6F8 /* JDNavigationController.swift in Sources */,
 				F82173321EC17CAC004FED07 /* JDTabBarController.swift in Sources */,
 				F821733A1EC17D2C004FED07 /* MyViewController.swift in Sources */,
+				F821733C1EC17D92004FED07 /* BaseViewController.swift in Sources */,
 				F82173341EC17CFB004FED07 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1059,6 +1071,7 @@
 				F82172DD1EC175FF004FED07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F82172DE1EC175FF004FED07 /* Build configuration list for PBXNativeTarget "JD-SwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -1067,6 +1080,7 @@
 				F82172E01EC175FF004FED07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F82172E11EC175FF004FED07 /* Build configuration list for PBXNativeTarget "JD-SwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -1075,6 +1089,7 @@
 				F82172E31EC175FF004FED07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

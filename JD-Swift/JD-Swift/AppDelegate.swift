@@ -17,6 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         // Override point for customization after application launch.
+        
+        let jdTabBarController : JDTabBarController = JDTabBarController()
+        self.window?.rootViewController = jdTabBarController
         self.window!.backgroundColor = UIColor.white
         self.window!.makeKeyAndVisible()
         return true
