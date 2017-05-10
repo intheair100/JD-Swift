@@ -19,6 +19,7 @@
 		F821733A1EC17D2C004FED07 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82173391EC17D2C004FED07 /* MyViewController.swift */; };
 		F821733C1EC17D92004FED07 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F821733B1EC17D92004FED07 /* BaseViewController.swift */; };
 		F821733F1EC1AAD8004FED07 /* MacroDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F821733E1EC1AAD8004FED07 /* MacroDefine.swift */; };
+		F86D1B091EC30E2B00B84304 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86D1B081EC30E2B00B84304 /* SearchBarView.swift */; };
 		F8E570F51EC1F19E00F5E6F8 /* JDNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E570F41EC1F19E00F5E6F8 /* JDNavigationController.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		F82173391EC17D2C004FED07 /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		F821733B1EC17D92004FED07 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F821733E1EC1AAD8004FED07 /* MacroDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacroDefine.swift; sourceTree = "<group>"; };
+		F86D1B081EC30E2B00B84304 /* SearchBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		F8E570F41EC1F19E00F5E6F8 /* JDNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JDNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -691,6 +693,7 @@
 		F82173301EC17C98004FED07 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F86D1B081EC30E2B00B84304 /* SearchBarView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -828,6 +831,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F86D1B091EC30E2B00B84304 /* SearchBarView.swift in Sources */,
 				F82173361EC17D0A004FED07 /* CategoryViewController.swift in Sources */,
 				F821733F1EC1AAD8004FED07 /* MacroDefine.swift in Sources */,
 				F82172BC1EC175FF004FED07 /* AppDelegate.swift in Sources */,

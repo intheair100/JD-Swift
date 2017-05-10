@@ -26,4 +26,15 @@ class JDNavigationController: UINavigationController {
         }
 //        appearance.titleTextAttributes
     }
+    
+    override func pushViewController(_ viewController: UIViewController, animated: Bool) {
+        if self.viewControllers.count > 0 {
+            viewController.hidesBottomBarWhenPushed = true
+        }
+        super.pushViewController(viewController, animated: true)
+    }
+    
+    func back() -> Void {
+        self.popViewController(animated: true)
+    }
 }

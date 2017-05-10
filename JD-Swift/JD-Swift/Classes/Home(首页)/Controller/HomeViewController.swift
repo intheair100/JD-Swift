@@ -9,7 +9,28 @@
 import Foundation
 import UIKit
 class HomeViewController: BaseViewController {
+
+    var _searchBarL:UISearchBar?
+    var _loadAvataView:UIView?
+    var _tableView:UITableView?
+    var topBtn:UIButton?
+    var lastContentOffset:CGFloat?
+    
+    var _dataArray:NSMutableArray?
+    
+    var dataArray:NSMutableArray?{
+        get{
+            return _dataArray
+        }
+        set{
+            _dataArray = newValue
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
+    
+    
 }
