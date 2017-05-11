@@ -20,6 +20,7 @@
 		F821733C1EC17D92004FED07 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F821733B1EC17D92004FED07 /* BaseViewController.swift */; };
 		F821733F1EC1AAD8004FED07 /* MacroDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F821733E1EC1AAD8004FED07 /* MacroDefine.swift */; };
 		F86D1B091EC30E2B00B84304 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86D1B081EC30E2B00B84304 /* SearchBarView.swift */; };
+		F8922BCB2285EAF5001FF157 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8922BCA2285EAF5001FF157 /* UIImageExtension.swift */; };
 		F8E570F51EC1F19E00F5E6F8 /* JDNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E570F41EC1F19E00F5E6F8 /* JDNavigationController.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		F821733B1EC17D92004FED07 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F821733E1EC1AAD8004FED07 /* MacroDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacroDefine.swift; sourceTree = "<group>"; };
 		F86D1B081EC30E2B00B84304 /* SearchBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		F8922BCA2285EAF5001FF157 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		F8E570F41EC1F19E00F5E6F8 /* JDNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JDNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -214,6 +216,7 @@
 				F82172FE1EC17C55004FED07 /* UITableViewCell */,
 				F82172FF1EC17C55004FED07 /* UIView */,
 				F82173001EC17C55004FED07 /* UIWindow */,
+				F8922BCA2285EAF5001FF157 /* UIImageExtension.swift */,
 			);
 			path = CoreCategory;
 			sourceTree = "<group>";
@@ -766,6 +769,7 @@
 				TargetAttributes = {
 					F82172B71EC175FF004FED07 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					F82172C61EC175FF004FED07 = {
@@ -840,6 +844,7 @@
 				F82173321EC17CAC004FED07 /* JDTabBarController.swift in Sources */,
 				F821733A1EC17D2C004FED07 /* MyViewController.swift in Sources */,
 				F821733C1EC17D92004FED07 /* BaseViewController.swift in Sources */,
+				F8922BCB2285EAF5001FF157 /* UIImageExtension.swift in Sources */,
 				F82173341EC17CFB004FED07 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -982,10 +987,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "JD-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "zp.JD-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -994,10 +1002,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "JD-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "zp.JD-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

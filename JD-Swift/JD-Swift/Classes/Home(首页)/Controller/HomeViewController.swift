@@ -18,20 +18,19 @@ class HomeViewController: BaseViewController {
     
     var _dataArray:NSMutableArray?
     
-    var dataArray:NSMutableArray?{
-        get{
-            return _dataArray
-        }
-        set{
-            _dataArray = newValue
-        }
-    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let xxx:SearchBarView = SearchBarView.init(frame: CGRect.init(x: 0, y: 7, width: self.view.frame.size.width - 20, height: 30))
+        self.view.backgroundColor = JDColor(r: 240, g: 243, b: 245)
+        
+        
         
     }
     
-    
+    func setupNavigationItem() -> Void {
+        self.navigationController?.navigationBar.barTintColor = UIColor.init(red: 27, green: 74, blue: 70, alpha: 1)
+//        self.navigationItem.leftBarButtonItem  = UIBarButtonItem.init(image: <#T##UIImage?#>, landscapeImagePhone: <#T##UIImage?#>, style: <#T##UIBarButtonItemStyle#>, target: <#T##Any?#>, action: <#T##Selector?#>)
+
+    }
 }
