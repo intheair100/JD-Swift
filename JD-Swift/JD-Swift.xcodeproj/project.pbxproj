@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F816A7B91EC6DC09000DEDB3 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F816A7B81EC6DC09000DEDB3 /* UIViewExtension.swift */; };
 		F82172BC1EC175FF004FED07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82172BB1EC175FF004FED07 /* AppDelegate.swift */; };
 		F82172BE1EC175FF004FED07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F82172BD1EC175FF004FED07 /* Assets.xcassets */; };
 		F82172C11EC175FF004FED07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F82172BF1EC175FF004FED07 /* LaunchScreen.storyboard */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F816A7B81EC6DC09000DEDB3 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		F82172B81EC175FF004FED07 /* JD-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JD-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F82172BB1EC175FF004FED07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F82172BD1EC175FF004FED07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 				F82172FF1EC17C55004FED07 /* UIView */,
 				F82173001EC17C55004FED07 /* UIWindow */,
 				F8922BCA2285EAF5001FF157 /* UIImageExtension.swift */,
+				F816A7B81EC6DC09000DEDB3 /* UIViewExtension.swift */,
 			);
 			path = CoreCategory;
 			sourceTree = "<group>";
@@ -841,6 +844,7 @@
 				F82172BC1EC175FF004FED07 /* AppDelegate.swift in Sources */,
 				F82173381EC17D1D004FED07 /* CartViewController.swift in Sources */,
 				F8E570F51EC1F19E00F5E6F8 /* JDNavigationController.swift in Sources */,
+				F816A7B91EC6DC09000DEDB3 /* UIViewExtension.swift in Sources */,
 				F82173321EC17CAC004FED07 /* JDTabBarController.swift in Sources */,
 				F821733A1EC17D2C004FED07 /* MyViewController.swift in Sources */,
 				F821733C1EC17D92004FED07 /* BaseViewController.swift in Sources */,

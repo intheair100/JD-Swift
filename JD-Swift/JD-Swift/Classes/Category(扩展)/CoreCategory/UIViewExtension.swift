@@ -35,5 +35,34 @@ extension UIView{
         self.frame = frame
     }
     
+    func setHeight(height:CGFloat) -> Void {
+        var frame = self.frame
+        frame.size.width = height
+        self.frame = frame
+    }
     
-}
+    func setCenterX(centerX:CGFloat) -> Void {
+        var center:CGPoint = self.center
+        center.x = centerX
+        self.center = center
+    }
+    
+    func centerX() -> CGFloat {
+        return self.center.x
+    }
+
+    func setCenterY(centerY:CGFloat) -> Void {
+        var center:CGPoint = self.center
+        center.y = centerY
+        self.center = center
+    }
+    
+    func centerY() -> CGFloat {
+        return self.center.y
+    }
+    
+    func height() -> CGFloat {
+        return self.frame.size.height
+    }
+  
+ }
