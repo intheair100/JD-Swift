@@ -17,7 +17,7 @@ extension UIImage{
      *
      *  @return 新的图片
      */
-     func imageWithName(imageName:String) -> UIImage {
+     static func imageWithName(imageName:String) -> UIImage {
         var newImage:UIImage? = nil
         if iOS7 {
             newImage = UIImage.init(named: imageName + "_os7")!
