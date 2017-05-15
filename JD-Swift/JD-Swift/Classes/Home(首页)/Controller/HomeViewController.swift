@@ -30,7 +30,15 @@ class HomeViewController: BaseViewController {
     
     func setupNavigationItem() -> Void {
         self.navigationController?.navigationBar.barTintColor = UIColor.init(red: 27, green: 74, blue: 70, alpha: 1)
-//        self.navigationItem.leftBarButtonItem  = UIBarButtonItem.init(image: <#T##UIImage?#>, landscapeImagePhone: <#T##UIImage?#>, style: <#T##UIBarButtonItemStyle#>, target: <#T##Any?#>, action: <#T##Selector?#>)
-
+        let searchBarView:SearchBarView = SearchBarView.init(frame: CGRect.init(x: 0, y: 7, width: self.view.frame.size.width - 120, height: 30))
+        searchBarView.delegate = self;
+        self.navigationItem.titleView = searchBarView
+        
     }
+    
+    func camera() -> Void {
+        print("点击了扫一扫")
+    }
+    
+    
 }

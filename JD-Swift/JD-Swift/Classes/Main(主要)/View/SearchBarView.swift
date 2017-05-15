@@ -21,7 +21,7 @@ class SearchBarView: UIView {
     let kSearchBarHeight:CGFloat = 30.0
 
     func pressedSearch(sender:UIButton!) -> Void {
-        
+
     }
     
     func setDefault() -> Void {
