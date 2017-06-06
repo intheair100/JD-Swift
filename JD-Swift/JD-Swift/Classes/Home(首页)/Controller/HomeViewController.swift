@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-class HomeViewController: BaseViewController {
+class HomeViewController: BaseViewController,SearchBarViewDelegate,UITableViewDelegate,UITableViewDataSource{
 
     var _searchBarL:UISearchBar?
     var _loadAvataView:UIView?
@@ -23,7 +23,9 @@ class HomeViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = JDColor(r: 240, g: 243, b: 245)
-        
+        setupNavigationItem()
+        _tableView = UITableView.init(frame: CGRect.init(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height), style: UITableViewStyle.grouped)
+        self.view.addSubview(_tableView!)
         
         
     }
@@ -33,12 +35,34 @@ class HomeViewController: BaseViewController {
         let searchBarView:SearchBarView = SearchBarView.init(frame: CGRect.init(x: 0, y: 7, width: self.view.frame.size.width - 120, height: 30))
         searchBarView.delegate = self;
         self.navigationItem.titleView = searchBarView
-        
     }
     
     func camera() -> Void {
         print("点击了扫一扫")
     }
     
+    //SearchBarViewDelegate 方法
+    func searchBarAudioButtonClicked(searchBarView: SearchBarView) {
+        
+    }
+    func searchBarSearchButtonClicked(searchbarView: SearchBarView) {
+        
+    }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+    }
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return (self._dataArray?.count)!;
+    }
 }
