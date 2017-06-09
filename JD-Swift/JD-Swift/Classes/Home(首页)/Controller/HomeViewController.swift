@@ -41,6 +41,7 @@ class HomeViewController: BaseViewController,SearchBarViewDelegate,UITableViewDe
         print("点击了扫一扫")
     }
     
+    //MARK: -- delegate --
     //SearchBarViewDelegate 方法
     func searchBarAudioButtonClicked(searchBarView: SearchBarView) {
         

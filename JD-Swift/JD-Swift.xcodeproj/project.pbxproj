@@ -24,6 +24,7 @@
 		F86D1B091EC30E2B00B84304 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86D1B081EC30E2B00B84304 /* SearchBarView.swift */; };
 		F8922BCB2285EAF5001FF157 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8922BCA2285EAF5001FF157 /* UIImageExtension.swift */; };
 		F8E570F51EC1F19E00F5E6F8 /* JDNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E570F41EC1F19E00F5E6F8 /* JDNavigationController.swift */; };
+		F8E5FFD71EEADAE1005BEA4F /* JHCellConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E5FFD61EEADAE1005BEA4F /* JHCellConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		F86D1B081EC30E2B00B84304 /* SearchBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		F8922BCA2285EAF5001FF157 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		F8E570F41EC1F19E00F5E6F8 /* JDNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JDNavigationController.swift; sourceTree = "<group>"; };
+		F8E5FFD61EEADAE1005BEA4F /* JHCellConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHCellConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -446,6 +448,7 @@
 		F821730D1EC17C55004FED07 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F8E5FFD61EEADAE1005BEA4F /* JHCellConfig.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -852,6 +855,7 @@
 				F816A7BB1EC6ED27000DEDB3 /* UIButtonExtension.swift in Sources */,
 				F821733A1EC17D2C004FED07 /* MyViewController.swift in Sources */,
 				F821733C1EC17D92004FED07 /* BaseViewController.swift in Sources */,
+				F8E5FFD71EEADAE1005BEA4F /* JHCellConfig.swift in Sources */,
 				F8922BCB2285EAF5001FF157 /* UIImageExtension.swift in Sources */,
 				F82173341EC17CFB004FED07 /* HomeViewController.swift in Sources */,
 			);
