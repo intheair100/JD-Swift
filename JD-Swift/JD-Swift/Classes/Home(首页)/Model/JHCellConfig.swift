@@ -23,8 +23,13 @@ class JHCellConfig: NSObject {
         return cellConfig
     }
     
-    
-    
-    
-    
+    func cellOfCellConfig(tableview:UITableView,dataModel:Any) -> UITableViewCell {
+        var cellID:NSString? = nil
+        var cellClass:UITableView = NSClassFromString(self.className as! String)?
+        
+        let cell:UITableViewCell = tableview.dequeueReusableCell(withIdentifier: cellID as! String)!
+        if cell == nil {
+        }
+        return cell
+    }
 }
