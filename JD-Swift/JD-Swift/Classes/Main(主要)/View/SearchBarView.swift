@@ -20,7 +20,9 @@ class SearchBarView: UIView {
     let kIconSize:CGFloat = 20.0
     let kSearchBarHeight:CGFloat = 30.0
 
-
+    func pressedSearch(sender:UIButton!) -> Void {
+        
+    }
     
     func setDefault() -> Void {
         let boundWith:CGFloat = self.bounds.size.width
@@ -35,14 +37,23 @@ class SearchBarView: UIView {
         
         self.searchButton?.contentHorizontalAlignment = UIControlContentHorizontalAlignment.left
         
-        let defaultFont:UIFont = UIFont.init(name: "Avenir Next", size: 14)
+        let defaultFont:UIFont = UIFont.init(name: "Avenir Next", size: 14)!
         self.searchButton?.titleLabel?.font = defaultFont
         self.searchButton?.setTitleColor(UIColor.lightGray, for: UIControlState.normal)
-        self.searchButton.s
-        
-        
+        self.searchButton?.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0)
+        self.searchButton?.setTitle("搜索京东商店/店铺", for: UIControlState.normal)
+        self.searchButton?.addTarget(self, action: #selector(pressedSearch), for: UIControlEvents.touchUpInside)
+        self.addSubview(self.searchButton!)
+    }
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.setDefault()
     }
     
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     
     
